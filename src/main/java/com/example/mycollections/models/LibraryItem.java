@@ -1,8 +1,10 @@
 package com.example.mycollections.models;
 
+import com.example.mycollections.MycollectionsApplication;
+
 public class LibraryItem {
-    protected String name;
-    protected int year;
+    public String name;
+    private int year;
 
     public LibraryItem(String name, int year) {
         this.name = name;
@@ -21,7 +23,8 @@ public class LibraryItem {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear() {
         this.year = year;
     }
+
 }
